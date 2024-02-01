@@ -1,0 +1,26 @@
+CREATE TABLE authors (
+    author_id INTEGER PRIMARY KEY,
+    first_name TEXT,
+    last_name TEXT
+);
+
+CREATE TABLE books (
+    book_id INTEGER PRIMARY KEY,
+    title TEXT,
+    year_published INTEGER,
+    author_id INTEGER,
+    FOREIGN KEY (author_id) REFERENCES authors(author_id)
+);
+
+ALTER TABLE books
+ADD COLUMN is_favorite BOOLEAN;
+
+-- Insert into authors
+INSERT INTO authors (first_name, last_name) VALUES ('John', 'Doe');
+INSERT INTO authors (first_name, last_name) VALUES ('Jane', 'Smith');
+
+-- Insert into books
+INSERT INTO books (title, year_published, author_id, is_favorite) VALUES ('Book1', 2020, 1, 1);
+INSERT INTO books (title, year_published, author_id, is_favorite) VALUES ('Book2', 2018, 2, 0);
+
+
