@@ -1,0 +1,2 @@
+2024-02-01 10:44:19,036 - INFO - Program started
+2024-02-01 10:44:19,036 - INFO - Program ended

@@ -27,8 +27,11 @@ def execute_sql_from_file(db_filepath, sql_file):
         conn.executescript(sql_script)
         print(f"Executed SQL from {sql_file}")
 
-connection = sqlite3.connect('books.db')
-pd.options.display.max_columns = 10
-pd.read_sql('SELECT * FROM authors', connection,
-            index_col=['id'])
+import logging
+
+# Configure logging to write to a file, appending new logs to the existing file
+logging.basicConfig(filename='log.txt', level=logging.DEBUG, filemode='a', format='%(asctime)s - %(levelname)s - %(message)s')
+
+logging.info("Program started")
+logging.info("Program ended")
 
