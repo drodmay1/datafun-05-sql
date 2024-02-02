@@ -81,3 +81,8 @@ def insert_data_from_csv(db_file):
 
 # Insert data from CSV
 insert_data_from_csv("book_db.db")
+
+git add .
+git commit -m "Add CSV files"
+git push origin main  # or the name of your branch
+
