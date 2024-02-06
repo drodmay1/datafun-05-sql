@@ -2,4 +2,4 @@
 UPDATE books
 SET year_published = 1998 
     column2 = value2
-WHERE title = 'Harry Potter and the Philosopher's Stone';
+WHERE title = 'Harry Potter and the Philosopher Stone';
