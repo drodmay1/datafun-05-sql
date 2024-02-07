@@ -50,4 +50,6 @@ def main():
 
     logging.info("All SQL operations completed successfully")
 
+if __name__ == "__main__":
+    main()
 
